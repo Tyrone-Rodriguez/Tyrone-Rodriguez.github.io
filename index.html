@@ -32,10 +32,10 @@
 				var temp_canvas = document.createElement("canvas");
 				var temp_ctx = temp_canvas.getContext("2d");
 				temp_canvas.width = 1;
-				temp_canvas.height = 36;
+				temp_canvas.height = 37;
 				temp_ctx.drawImage(firepal_image, 0, 0);
 
-				var firepal_data = temp_ctx.getImageData(0, 0, 1, 36);
+				var firepal_data = temp_ctx.getImageData(0, 0, 1, 37);
 				for(var i = 0; i <= 36; i++)
 				{
 					palette[i].r = firepal_data.data[i * 4 + 0];
@@ -94,8 +94,6 @@
 					function Tick()
 					{
 						// Simulate framebuffer
-						console.log("START TICK!");
-
 						for (var y = 1; y < canvas.height; y++)
 						{
 							var i = y * canvas.width * 4;
@@ -106,10 +104,10 @@
 								if (framebuffer.data[i + 0])
 								{
 									var upi = i - canvas.width * 4;
-									var rand = Math.round(Math.random() * 4.0);
-									var xoff = -rand + 2;
+									var rand = Math.round(Math.random() * 2.0);
+									var xoff = -rand + 1;
 									if (x + xoff < 0)
-										upi = canvas.width * 4;
+										upi = y * canvas.width * 4;
 									else if (x + xoff >= canvas.width)
 										upi = (y * canvas.width - 1) * 4;
 									else
@@ -142,8 +140,6 @@
 							}
 						}
 						ctx.putImageData(framebuffer_out, 0, 0);
-
-						console.log("TICK!");
 					}
 					setInterval(Tick, 100);
 				}
@@ -154,10 +150,13 @@
 		</script>
 	</head>
 	<body onload="OnLoad()">
-		<canvas id="logo" width="320" height="100"><img src="logo.png"></canvas><br>
+		superfuckingmario has resumed operations! thank you to our incredible patrons who kept our company going all these years!
+		<hr>
+		<canvas id="logo" width="400" height="120"><img src="logo.png"></canvas><br>
 		hello have you ever wanted superfuckingmario?
 		<marquee><img src="/superfuckingmario.png"></marquee>
 		order superfuckingmario $$$ today<br>
 		michael the game coming soon
+		<img src="michael.png">
 	</body>
 </html>
