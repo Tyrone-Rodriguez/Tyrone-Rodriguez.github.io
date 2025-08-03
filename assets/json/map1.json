@@ -112,6 +112,12 @@
                  "height":960,
                  "id":35,
                  "name":"schoola",
+                 "properties":[
+                        {
+                         "name":"music",
+                         "type":"string",
+                         "value":"honeydew"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -123,6 +129,12 @@
                  "height":240,
                  "id":36,
                  "name":"schoolb",
+                 "properties":[
+                        {
+                         "name":"music",
+                         "type":"string",
+                         "value":"honeydew"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1289,15 +1301,15 @@
                  "y":720
                 }, 
                 {
-                 "height":14.5454545454546,
+                 "height":14.5455,
                  "id":67,
                  "name":"",
                  "rotation":0,
                  "type":"newspaper",
                  "visible":true,
-                 "width":16.2727272727273,
-                 "x":735.636363636364,
-                 "y":412.363636363636
+                 "width":16.2727,
+                 "x":735.636,
+                 "y":412.364
                 }, 
                 {
                  "height":8,
