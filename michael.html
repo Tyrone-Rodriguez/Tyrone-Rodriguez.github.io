@@ -3,22 +3,29 @@
 <head>
 	<title>Not Found</title>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
-
+
+	
 	<style>
-		body {
+		#normalbody {
+			margin: 0;
+			padding: 0;
 			background-color: #FFF;
 		}
-		img {
+		#theimage {
 			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			margin: auto;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			image-rendering: pixelated;
 		}
 	</style>
+
+  <script type="module" crossorigin src="/assets/main-CLWPWjqf.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/game-BEa4uVBj.css">
 </head>
-<body>
-	<img src="/assets/img/michael.png">
+<body id="normalbody" onload="MichaelOnLoad()">
+	<img id="theimage" src="/assets/img/michael.png" hidden>
+	<button id="gameStartButton" onclick="GameOnClick()" hidden>Game</button>
+	<canvas id="gameCanvas" width="640" height="480" hidden></canvas>
 </body>
 </html>

@@ -20,8 +20,7 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			transform: translate(-50%, -50%) scale(2);
-			image-rendering: pixelated;
+			transform: translate(-50%, -50%) scale(0.1);
 		}
 	</style>
 	<script>
@@ -29,7 +28,7 @@
 			document.getElementById("theimage").hidden = false;
 			document.getElementById("clickbutton").hidden = true;
 
-			let audio = new Audio("/assets/mus/Father.ogg");
+			let audio = new Audio("/assets/mus/autumn.ogg");
 			audio.loop = true;
 			audio.play();
 		}
@@ -37,6 +36,8 @@
 </head>
 <body>
 	<button id="clickbutton" onclick="OnClick()">Click Me</button>
-	<img id="theimage" src="/assets/img/infarto3.png" hidden>
+	<div id="centercontainer">
+		<img id="theimage" src="/assets/img/painting.png" hidden>
+	</div>
 </body>
 </html>
