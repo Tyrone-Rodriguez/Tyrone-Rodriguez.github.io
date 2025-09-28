@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Satisfaction Ganrateed</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: white;
+		}
+		#theimage {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			-webkit-transition: all 20s ease; 
+			-moz-transition: all 20s ease; 
+			-ms-transition: all 20s ease; 
+			-o-transition: all 20s ease;
+			transition: all 20s ease;
+		}
+	</style>
+</head>
+<body>
+	<img id="theimage" onload="this.style.opacity=1" src="/assets/img/nike.png">
+</body>
+</html>
